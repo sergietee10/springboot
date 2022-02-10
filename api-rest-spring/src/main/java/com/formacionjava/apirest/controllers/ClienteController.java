@@ -149,6 +149,7 @@ public class ClienteController {
 //		return clienteBorrado;
 //	}
 
+	//Delete method
 	@DeleteMapping("/clientes/{id}")
 	public ResponseEntity<?> deleteCliente(@PathVariable Long id) {
 		Cliente clienteBorrado = servicio.findById(id);
